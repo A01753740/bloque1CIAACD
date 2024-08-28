@@ -25,7 +25,7 @@ def predictjson():
     ])
 
     # Make a prediction
-    result = df.predict([inputData.reshape(1, -1)])
+    result = df.predict(inputData.reshape(1, -1))
     # Return the prediction
     return jsonify({'Prediction': str(result[0])})
 
